@@ -7,4 +7,10 @@ class User < ApplicationRecord
           validates :nickname
           validates :profile
          end
+         PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze
+         validates_format_of :password, with: PASSWORD_REGEX, message: 'Include both letters and numbers'
+  has_many :runs
+  has-many :comments
+  has_many :likes
+  has_many :like_runs, through: :likes, source: :run
 end

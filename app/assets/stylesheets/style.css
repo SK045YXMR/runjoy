@@ -282,6 +282,12 @@ a {
   font-size: 10px;
 }
 
+/* 追加 */
+.login-flash-message{
+  color: red;
+  text-align: center;
+}
+
 /* タブレット対応 */
 @media (max-width: 1024px) {
   .inner {
