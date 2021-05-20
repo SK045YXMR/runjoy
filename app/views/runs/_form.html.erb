@@ -1,0 +1,21 @@
+<%= form_with(model: @run, local: true) do |f|%>
+<%= render 'layouts/error_messages', model: f.object %>
+  <div class="field">
+    <%= f.label :title, "投稿タイトル" %><br />
+    <%= f.text_field :title, id:"run_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content, "投稿内容" %><br />
+    <%= f.text_area :content, class: :form__text, id:"run_content" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "共有したい画像" %><br />
+    <%= f.file_field :image, id:"run_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
