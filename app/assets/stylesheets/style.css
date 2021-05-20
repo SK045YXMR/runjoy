@@ -93,6 +93,7 @@ a {
 
 .form__text {
   width: 50%;
+  white-space: pre-wrap;
 }
 
 .field{
@@ -146,6 +147,8 @@ a {
   margin-bottom: 40px;
 }
 .card__img {
+  width: 45vh;
+  height: 45vh;
   margin-bottom: 16px;
 }
 .card__title {
@@ -154,9 +157,7 @@ a {
   margin-bottom: 8px;
   font-weight: bold;
 }
-.card__summary {
-  font-size: 16px;
-}
+
 .card__user {
   display: block;
   font-size: 12px;
@@ -287,6 +288,8 @@ a {
   color: red;
   text-align: center;
 }
+
+#run_content{ white-space: pre-wrap; }
 
 /* タブレット対応 */
 @media (max-width: 1024px) {
