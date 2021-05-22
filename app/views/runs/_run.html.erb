@@ -1,7 +1,7 @@
 <div class="card">
-  <%= link_to image_tag(run.image, class: :card__img), root_path %>
+  <%= link_to image_tag(run.image, class: :card__img), run_path(run.id) %>
   <div class="card__body">
-    <%= link_to run.title, root_path, class: :card__title%>
+    <%= link_to run.title, run_path(run.id), class: :card__title%>
     <%= link_to "by #{run.user.nickname}", root_path, class: :card__user %>
   </div>
 </div>

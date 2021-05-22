@@ -93,7 +93,7 @@ a {
 
 .form__text {
   width: 50%;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
 }
 
 .field{
@@ -167,27 +167,28 @@ a {
 }
 
 /* 詳細ページ */
-.prototype__wrapper{
+.run__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding{
+.run__hedding{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-.prototype__user{
+.run__user{
   display: block;
   font-size: 16px;
   color: #999;
   text-align: center;
   text-decoration: underline;
 }
-.prototype__image{
-  width: 40%;
+.run__image{
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding: 16px 0;
 }
-.prototype__detail{
+.run__detail{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -197,12 +198,12 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
-.prototype__manage{
+.run__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.prototype__btn{
+.run__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -214,12 +215,12 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.prototype__btn:hover{
+.run__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.prototype__comments{
+.run__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
@@ -289,7 +290,12 @@ a {
   text-align: center;
 }
 
-#run_content{ white-space: pre-wrap; }
+.joy__image{
+  width: 45vh;
+  height: 45vh;
+}
+
+/* #run_content{ white-space: pre-wrap; } */
 
 /* タブレット対応 */
 @media (max-width: 1024px) {
