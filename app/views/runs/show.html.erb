@@ -1,0 +1,48 @@
+<main class="main">
+  <div class="inner">
+    <div class="run__wrapper">
+      <p class="run__hedding">
+        <%= @run.title %>
+      </p>
+      <%= link_to "by #{@run.user.nickname}", root_path, class: :run__user %>
+      <% if user_signed_in? && current_user.id == @run.user.id %>
+        <div class="run__manage">
+          <%= link_to "編集する", edit_run_path(@run.id), class: :run__btn %>
+          <%= link_to "削除する", run_path(@run.id), method: :delete, class: :run__btn %>
+        </div>
+      <% end %>
+      <div class="run__image">
+        <%= image_tag @run.image, class: :joy__image %>
+      </div>
+      <div class="run__body">
+        <div class="run__detail">
+          <p class="detail__title">投稿内容</p>
+          <p class="detail__message">
+            <%= simple_format(h(@run.content)) %>
+          </p>
+        </div>
+      </div>
+      <div class="run__comments">
+        <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
+          <%# <%= form_with model: モデル名,local: true do |f|%>
+            <div class="field">
+              <%# <%= f.label :hoge, "コメント" %><br />
+              <%# <%= f.text_field :hoge, id:"comment_text" %>
+            </div>
+            <div class="actions">
+              <%# <%= f.submit "送信する", class: :form__btn  %>
+            </div>
+          <%# <% end %> 
+        <%# // ログインしているユーザーには上記を表示する %>
+        <ul class="comments_lists">
+          <%# 投稿に紐づくコメントを一覧する処理を記述する %>
+            <li class="comments_list">
+              <%# <%= " コメントのテキスト "%>
+              <%# <%= link_to "（ ユーザー名 ）", root_path, class: :comment_user %>
+            </li>
+          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
