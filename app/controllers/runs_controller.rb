@@ -20,6 +20,8 @@ class RunsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @run.comments.includes(:user).order("created_at DESC")
   end
 
   def edit
