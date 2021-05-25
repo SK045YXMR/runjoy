@@ -4,7 +4,7 @@
       <p class="run__hedding">
         <%= @run.title %>
       </p>
-      <%= link_to "by #{@run.user.nickname}", root_path, class: :run__user %>
+      <%= link_to "by #{@run.user.nickname}", user_path(@run.user.id), class: :run__user %>
       <% if user_signed_in? && current_user.id == @run.user.id %>
         <div class="run__manage">
           <%= link_to "編集する", edit_run_path(@run.id), class: :run__btn %>
@@ -39,7 +39,7 @@
           <% @comments.each do |comment| %>
             <li class="comments_list">
                <%= comment.text %>
-               <%= link_to "#{comment.user.nickname}", root_path, class: :comment_user %>
+               <%= link_to "#{comment.user.nickname}", user_path(comment.user.id), class: :comment_user %>
             </li>
           <% end %>
         </ul>
