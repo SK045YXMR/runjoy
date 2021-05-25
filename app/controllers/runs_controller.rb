@@ -1,6 +1,7 @@
 class RunsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]
   before_action :set_params, only: [:show, :edit, :update, :destroy]
+  before_action :move_to_index, only: [:edit, :update, :destroy]
 
   def index
     @runs = Run.includes(:user).order("created_at DESC")
@@ -48,5 +49,11 @@ class RunsController < ApplicationController
 
   def set_params
     @run = Run.find(params[:id])
+  end
+
+  def move_to_index
+    if current_user.id != @run.user_id
+      redirect_to root_path
+    end
   end
 end
