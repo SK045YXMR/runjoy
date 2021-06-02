@@ -1,7 +1,7 @@
 # アプリケーション名
 
 # RUN JOY
-[![Image from Gyazo](https://i.gyazo.com/58f2f370b60ff3083928dd4872357f1d.png)](https://gyazo.com/58f2f370b60ff3083928dd4872357f1d)
+[![Image from Gyazo](https://i.gyazo.com/0ecec5097a45d9ca25f9cff6f719d233.png)](https://gyazo.com/0ecec5097a45d9ca25f9cff6f719d233)
 # アプリケーション概要
 
 1. このアプリケーションは、全てのランニングやジョギングをしている人等に向けて作成しました。
