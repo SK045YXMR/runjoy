@@ -36,7 +36,7 @@
 - ユーザー詳細・編集機能
 
 # 実装した機能の紹介
-1. ユーザー管理機能<br>GemのDeviseで実装しております。ユーザーの新規登録とログインができます。<br>ユーザーログイン画面[![Image from Gyazo](https://i.gyazo.com/75ab58834f802d04831fd1574bbe3519.gif)](https://gyazo.com/75ab58834f802d04831fd1574bbe3519)<br>ユーザー新規登録画面[![Image from Gyazo](https://i.gyazo.com/0991dc5e5a794ecad9b52eb1152d0c70.gif)](https://gyazo.com/0991dc5e5a794ecad9b52eb1152d0c70)<br>
+1. ユーザー管理機能<br>GemのDeviseで実装しております。ユーザーの新規登録とログインができます。<br>ユーザーログイン画面<br>[![Image from Gyazo](https://i.gyazo.com/75ab58834f802d04831fd1574bbe3519.gif)](https://gyazo.com/75ab58834f802d04831fd1574bbe3519)<br>ユーザー新規登録画面[![Image from Gyazo](https://i.gyazo.com/0991dc5e5a794ecad9b52eb1152d0c70.gif)](https://gyazo.com/0991dc5e5a794ecad9b52eb1152d0c70)<br>
 2. 投稿機能<br>画像とコメントを投稿できます。<br>
 3. 投稿詳細機能<br>投稿の詳細機能です。トップページの画像をクリックすると遷移します。<br>
 4. 投稿編集機能（更新・削除を含む）<br>投稿編集機能です。詳細ページの編集・削除ボタンから実行できます。<br>
